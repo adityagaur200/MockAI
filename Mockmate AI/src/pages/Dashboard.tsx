@@ -32,7 +32,7 @@ const DashboardPage = () => {
     return;
   }
 
-  fetch("http://localhost:8000/interview/dashboard", {
+  fetch("https://tranquil-achievement.up.railway.app/interview/dashboard", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`, 

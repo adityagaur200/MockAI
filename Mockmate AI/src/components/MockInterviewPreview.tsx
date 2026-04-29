@@ -23,7 +23,7 @@ const streamRef = useRef(null);
 const fetchQuestion = async () => {
 try {
 const res = await fetch(
-`http://localhost:8000/interview/${interviewId}/question`
+`https://tranquil-achievement.up.railway.app/interview/${interviewId}/question`
 );
 
   const data = await res.json();
@@ -110,7 +110,7 @@ setIsRecording(false);
 const pollForNextQuestion = (oldQuestion) => {
   const interval = setInterval(async () => {
     const res = await fetch(
-      `http://localhost:8000/interview/${interviewId}/question`
+      `https://tranquil-achievement.up.railway.app/interview/${interviewId}/question`
     );
 
     const data = await res.json();
@@ -155,7 +155,7 @@ return;
   formData.append("file", recordedBlob, "answer.webm");
 
   await fetch(
-    `http://localhost:8000/interview/${interviewId}/answer`,
+    `https://tranquil-achievement.up.railway.app/interview/${interviewId}/answer`,
     {
       method: "POST",
       body: formData,

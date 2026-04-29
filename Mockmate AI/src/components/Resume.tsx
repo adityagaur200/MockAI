@@ -52,7 +52,7 @@ const Resume = () => {
       navigate("/Auth");
       return;
     }
-    const response = await fetch("http://localhost:8000/interview/start", {
+    const response = await fetch("https://tranquil-achievement.up.railway.app/interview/start", {
       method: "POST",
       body: formData,
       headers: {

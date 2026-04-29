@@ -125,7 +125,7 @@ const AnalysisDetail = () => {
           return;
         }
 
-        const response = await fetch(`http://localhost:8000/interview/${interviewId}`, {
+        const response = await fetch(`https://tranquil-achievement.up.railway.app/interview/${interviewId}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
