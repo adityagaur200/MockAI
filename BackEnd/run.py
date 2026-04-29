@@ -1,9 +1,10 @@
 import uvicorn
+import os
 
 if __name__ == "__main__":
     uvicorn.run(
-        "app.main:app",   
-        host="127.0.0.1", # local server
-        port=8000,        # default port
-        reload=True       
+        "app.main:app",
+        host="0.0.0.0",                 # IMPORTANT
+        port=int(os.getenv("PORT", 8000)),  # IMPORTANT
+        reload=False                   # production
     )
