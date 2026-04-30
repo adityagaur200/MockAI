@@ -32,7 +32,7 @@ const DashboardPage = () => {
     return;
   }
 
-  fetch("https://tranquil-achievement.up.railway.app/interview/dashboard", {
+  fetch("https://tranquil-achievement-production-8d9b.up.railway.app/interview/dashboard", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`, 

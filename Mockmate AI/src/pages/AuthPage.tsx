@@ -34,7 +34,7 @@ export default function AuthPage() {
       let response;
 
       if (isLogin) {
-        response = await fetch("https://tranquil-achievement.up.railway.app/auth/login", {
+        response = await fetch("https://tranquil-achievement-production-8d9b.up.railway.app/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function AuthPage() {
           return;
         }
 
-        response = await fetch("https://tranquil-achievement.up.railway.app/auth/register", {
+        response = await fetch("https://tranquil-achievement-production-8d9b.up.railway.app/auth/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

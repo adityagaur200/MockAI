@@ -10,7 +10,9 @@ app = FastAPI(title="AI Mock Interview Backend")
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+         "https://mockai-production-3023.up.railway.app",
+        "*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
